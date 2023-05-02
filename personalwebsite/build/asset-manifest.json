@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/brunocecco/static/css/main.5101cddb.css",
+    "main.js": "/brunocecco/static/js/main.5b33febc.js",
+    "static/js/787.bbe01249.chunk.js": "/brunocecco/static/js/787.bbe01249.chunk.js",
+    "static/media/st-andrews-logo.png": "/brunocecco/static/media/st-andrews-logo.5b7c9671f8d9a656635e.png",
+    "index.html": "/brunocecco/index.html",
+    "main.5101cddb.css.map": "/brunocecco/static/css/main.5101cddb.css.map",
+    "main.5b33febc.js.map": "/brunocecco/static/js/main.5b33febc.js.map",
+    "787.bbe01249.chunk.js.map": "/brunocecco/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5101cddb.css",
+    "static/js/main.5b33febc.js"
+  ]
+}
