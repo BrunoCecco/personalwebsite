@@ -8,9 +8,9 @@ import './App.css';
 import UniLogo from './images/st-andrews-logo.png';
 import Logo from './images/logo.png';
 import Projects from './pages/Projects';
-import Interests from './pages/Interests';
-import WorkExperience from './pages/WorkExperience';
-import University from './pages/University';
+// import Interests from './pages/Interests';
+// import WorkExperience from './pages/WorkExperience';
+// import University from './pages/University';
 import Button from './components/Button';
 import { useEffect, useState, useRef } from 'react';
 
