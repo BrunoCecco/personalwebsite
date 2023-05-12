@@ -10,15 +10,13 @@ body {
 }
 
 a {
-  text-decoration: underline;
   width: fit-content;
   margin: 0 auto;
   font-weight: 500;
 }
 
 a:hover {
-  text-decoration: none;
-  color: blue;
+  text-decoration: underline;
   transition: all 0.2s ease-in-out;
 }
 
