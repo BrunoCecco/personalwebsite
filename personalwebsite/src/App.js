@@ -36,7 +36,7 @@ function Container({ label, links, bgColor, children }) {
               Object.entries(links).map(([key, val], i) => (
                 <a
                   href={`/${val}`}
-                  className='w-full h-full flex items-center justify-center duration-200 transition-all group cursor-pointer bg-five text-slate-800'
+                  className='w-full h-full p-4 flex items-center justify-center duration-200 transition-all group cursor-pointer bg-five text-slate-800'
                 >
                   <div className='font-bold text-xl group-hover:text-2xl duration-200 transition-all'>
                     {key}
@@ -56,12 +56,12 @@ function Container({ label, links, bgColor, children }) {
 
 function Links() {
   return (
-    <div className='flex items-center gap-8 text-white text-xl'>
+    <div className='flex flex-wrap items-center gap-8 text-white'>
       <a
         href='#workexperience'
         className='cursor-pointer hover:scale-110 duration-200 transition-all'
       >
-        Work Experience
+        Experience
       </a>
       <a
         href='#projects'
@@ -82,18 +82,12 @@ function Links() {
         Interests
       </a>
       <a
-        href='#blog'
-        className='cursor-pointer hover:scale-110 duration-200 transition-all'
-      >
-        Blog
-      </a>
-      <a
         target='_blank'
         rel='noreferrer'
         href='mailto: bruno.ceccolini@.com'
         className='cursor-pointer hover:scale-110 duration-200 transition-all'
       >
-        <HiOutlineMail className='text-4xl' />
+        <HiOutlineMail className='text-3xl' />
       </a>
       <a
         href='https://www.linkedin.com/in/bruno-ceccolini/'
@@ -101,7 +95,7 @@ function Links() {
         rel='noreferrer'
         className='cursor-pointer hover:scale-110 duration-200 transition-all'
       >
-        <AiOutlineLinkedin className='text-4xl' />
+        <AiOutlineLinkedin className='text-3xl' />
       </a>
       <a
         href='https://www.instagram.com/brunoceccolini_/'
@@ -109,7 +103,7 @@ function Links() {
         rel='noreferrer'
         className='cursor-pointer hover:scale-110 duration-200 transition-all'
       >
-        <AiOutlineInstagram className='text-4xl' />
+        <AiOutlineInstagram className='text-3xl' />
       </a>
       <a
         href='https://www.github.com/BrunoCecco/'
@@ -117,7 +111,7 @@ function Links() {
         rel='noreferrer'
         className='cursor-pointer hover:scale-110 duration-200 transition-all'
       >
-        <AiOutlineGithub className='text-4xl' />
+        <AiOutlineGithub className='text-3xl' />
       </a>
     </div>
   );
@@ -125,14 +119,14 @@ function Links() {
 
 function Header() {
   return (
-    <header className='w-full flex flex-wrap gap-8 text-left items-center justify-between py-6 bg-three md:px-40 px-10'>
-      <div className='flex items-center gap-2 p-4 rounded-lg bg-five font-medium'>
-        <div className='text-2xl text-red-500'>BRUNO</div>
-        <img src={Logo} alt='Logo' className='w-10' />
-        <div className='text-2xl'>
-          <span className='text-green-500'>CEC</span>
-          <span className='text-green-500'>COL</span>
-          <span className='text-green-500'>INI</span>
+    <header className='w-full flex flex-wrap gap-8 text-left items-center lg:justify-between justify-center py-6 bg-three lg:px-20 px-10'>
+      <div className='flex items-center gap-2 p-4 rounded-lg bg-white font-medium'>
+        <div className='text-xl text-green-500'>BRUNO</div>
+        <img src={Logo} alt='Logo' className='w-8' />
+        <div className='text-xl'>
+          <span className='text-red-500'>CEC</span>
+          <span className='text-red-500'>COL</span>
+          <span className='text-red-500'>INI</span>
         </div>
       </div>
       <Links />
@@ -174,9 +168,9 @@ function Hero() {
   return (
     <section
       id='hero'
-      className='h-[100vh] md:p-40 p-10 flex flex-col gap-10 items-center justify-center relative'
+      className='h-[100vh] md:p-20 p-10 flex flex-col gap-10 items-center justify-center relative'
     >
-      <div className='bg-two relative shadow-lg shadow-slate-700 rounded-xl md:p-20 p-10 text-four flex flex-col md:gap-10 gap-4'>
+      <div className='bg-three relative shadow-lg shadow-slate-700 rounded-xl md:p-20 p-10 text-four flex flex-col md:gap-10 gap-4'>
         <h1
           className='text-4xl md:text-6xl lg:text-8xl text-center animate-greeting'
           ref={greetingRef}
@@ -203,16 +197,16 @@ function Hero() {
 
 function Info() {
   return (
-    <section id='info' className='h-[100vh] md:p-40 p-10 bg-slate-800 relative'>
+    <section id='info' className='h-[100vh] md:p-40 p-10 bg-three relative'>
       <div className='w-full h-full relative grid lg:grid-cols-2 grid-cols-1 items-center justify-center gap-6'>
         <Container
-          label='Projects'
+          label='Personal Projects'
           bgColor='bg-slate-700'
           links={{
             'Dao Chat': '#daochat',
             Xchanted: '#xchanted',
             Motive: '#motive',
-            Solswap: '#solswap',
+            // Solswap: '#solswap',
           }}
         ></Container>
         <Container
@@ -221,7 +215,7 @@ function Info() {
             'Solana Labs': '#solanalabs',
             'BCB Group': '#bcbgroup',
             MacTutor: '#mactutor',
-            'Eunoia Ventures': '#eunoia',
+            Expedia: '#expedia',
           }}
         ></Container>
         <Container
@@ -235,7 +229,7 @@ function Info() {
         ></Container>
         <Container label='University'>
           <img
-            className='w-full h-full bg-neutral-300'
+            className='w-auto h-full bg-neutral-300'
             src={UniLogo}
             alt='St Andrews Logo'
           />
@@ -255,7 +249,7 @@ function App() {
         <section id='projects' className='h-[100vh] md:p-40 p-10 relative'>
           <Projects />
         </section>
-        <section
+        {/* <section
           id='workexperience'
           className='h-[100vh] md:p-40 p-10 relative'
         >
@@ -266,7 +260,7 @@ function App() {
         </section>
         <section id='uni' className='h-[100vh] md:p-40 p-10 relative'>
           <University />
-        </section>
+        </section> */}
         <section
           id='website-info'
           className='h-[100vh] md:p-40 p-10 flex flex-col gap-10 items-center text-4xl justify-center relative'
