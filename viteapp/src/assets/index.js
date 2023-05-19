@@ -32,8 +32,12 @@ import expedia from './company/expedia.png';
 import solana from './company/solana.png';
 import eunoia from './company/eunoia.png';
 
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import realms from './realms.png';
+import xchanted from './xchanted.jpg';
+import daochat from './daochat.png';
+import motive from './motive.jpg';
+import fpf from './fpf.jpeg';
+// import unitygame from './unitygame.png';
 
 export {
   logo,
@@ -61,12 +65,16 @@ export {
   mactutor,
   solana,
   expedia,
-  jobit,
-  tripguide,
   eunoia,
   cpp,
   python,
   java,
   firestore,
   unity,
+  xchanted,
+  daochat,
+  motive,
+  fpf,
+  realms,
+  // unitygame,
 };

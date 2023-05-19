@@ -16,13 +16,17 @@ import {
   solana,
   bcb,
   expedia,
-  jobit,
-  tripguide,
   cpp,
   python,
   java,
   firestore,
   unity,
+  xchanted,
+  daochat,
+  motive,
+  fpf,
+  realms,
+  // unitygame,
 } from '../assets';
 
 export const navLinks = [
@@ -171,25 +175,25 @@ const experiences = [
 ];
 
 const projects = [
-  {
-    name: 'Unity Game',
-    description: '',
-    tags: [
-      {
-        name: 'c++',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'unity',
-        color: 'green-text-gradient',
-      },
-    ],
-    source_code_link: 'https://github.com/',
-  },
+  // {
+  //   name: 'Unity Game',
+  //   description: 'An endless runner game built with Unity.',
+  //   tags: [
+  //     {
+  //       name: 'c++',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'unity',
+  //       color: 'green-text-gradient',
+  //     },
+  //   ],
+  //   image: unitygame,
+  //   source_code_link: 'https://github.com/',
+  // },
   {
     name: 'DAO Chat',
-    description: '',
-    //   'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    description: 'Decentralized messaging platform built for a hackathon.',
     tags: [
       {
         name: 'react',
@@ -200,12 +204,19 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: daochat,
+    links: [
+      {
+        name: 'Live App',
+        url: 'https://dao-chat.vercel.app/sign-up',
+      },
+    ],
+    source_code_link: 'https://github.com/devsalmon/dao-chat-app',
   },
   {
-    name: 'DAO Directory Website',
-    description: '',
+    name: 'Realms',
+    description:
+      'Website containing a directory of DAOs on the Solana blockchain.',
     tags: [
       {
         name: 'reactjs',
@@ -216,12 +227,20 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: realms,
+    links: [
+      {
+        name: 'Live App',
+        url: 'https://app.realms.today/realms',
+      },
+    ],
+    source_code_link:
+      'https://github.com/solana-labs/governance-ui/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed',
   },
   {
     name: 'Motive Party App',
-    description: '',
+    description:
+      'Party/Event organization app with instagram-like photo feed and social media features.',
     tags: [
       {
         name: 'firestore',
@@ -232,12 +251,12 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: motive,
+    source_code_link: 'https://github.com/BrunoCecco/Motive-Party-App',
   },
   {
     name: 'Xchanted',
-    description: '',
+    description: 'Web3 assets social media platform.',
     tags: [
       {
         name: 'nextjs',
@@ -248,13 +267,19 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: xchanted,
+    links: [
+      {
+        name: 'Live App',
+        url: 'https://www.xchanted.com/',
+      },
+    ],
+    source_code_link: 'https://github.com/xchanted/xchanted',
   },
   {
     name: 'Fantastic Puzzles Fife',
     description:
-      'A puzzle hosting website for users to create and solve puzzles, and compete with other users.',
+      'Puzzle hosting website for users to create and solve puzzles, and compete with other users.',
     tags: [
       {
         name: 'scrum',
@@ -269,7 +294,7 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: tripguide,
+    image: fpf,
     source_code_link: 'https://github.com/',
   },
 ];
