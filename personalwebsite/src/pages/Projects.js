@@ -1,76 +1,92 @@
-import daochat from '../images/daochat.png';
+import daochat from '../images/daochat.jpg';
+import xchanted from '../images/xchanted.svg';
+import motive from '../images/motive.jpg';
+import { useEffect, useRef } from 'react';
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-10 px-10'>
-      <div className='text-2xl font-bold'>Personal Projects</div>
-      <div className='font-semibold'>
-        Here are some of my favourite projects I've worked on in my spare time.
-      </div>
-      <div
-        className='text-2xl font-bold  mt-10 flex gap-6 items-center'
-        id='daochat'
-      >
-        <img src={daochat} alt='dao chat' className='w-16' />
-        DAO CHAT
-      </div>
-      <div className='rounded-lg p-4 flex items-center justify-center gap-2 relative bg-four'>
-        <div className='flex flex-col'>
-          <div className='font-semibold'>
-            DAO Chat is a decentralized messaging app build for a hackathon.
-          </div>
-          <a
-            href='https://github.com/devsalmon/dao-chat-app'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Github repo
-          </a>
-          <a
-            target='_blank'
-            rel='noreferrer'
-            href='https://docs.google.com/presentation/d/1Z52qJKRmhDV9yoaVSwETS_aWbLrpjB8pnRet353Z3Gw/edit#slide=id.g12556e177aa_0_6'
-          >
-            Presentation
-          </a>
-          <a
-            href='https://dao-chat.vercel.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Live app
-          </a>
+    <div className='h-[75vh] w-[100vw]'>
+      <div className='container mx-auto w-auto mt-20'>
+        <input type='radio' name='slider' id='item-1' checked />
+        <input type='radio' name='slider' id='item-2' />
+        <input type='radio' name='slider' id='item-3' />
+        <div className='cards'>
+          <label className='card' for='item-1' id='song-1'>
+            <div
+              className='p-20 bg-two rounded-lg shadow-md flex items-center h-[300px] bg-no-repeat bg-center'
+              style={{
+                backgroundImage: `url(${daochat})`,
+                backgroundSize: '50%',
+              }}
+            />
+          </label>
+          <label className='card' for='item-2' id='song-2'>
+            <div
+              className='p-4 bg-two rounded-lg shadow-md flex items-center h-[300px] bg-center bg-no-repeat'
+              style={{
+                backgroundImage: `url(${xchanted})`,
+                backgroundSize: '50%',
+              }}
+            />
+          </label>
+          <label className='card' for='item-3' id='song-3'>
+            <div
+              className='p-20 bg-two rounded-lg shadow-md flex items-center h-[300px] bg-center bg-no-repeat'
+              style={{
+                backgroundImage: `url(${motive})`,
+                backgroundSize: '50%',
+              }}
+            />
+          </label>
         </div>
-      </div>
-      <div
-        className='text-2xl font-bold  mt-10 flex gap-6 items-center'
-        id='xchanted'
-      >
-        {/* <img src={daochat} alt='dao chat' className='w-16' /> */}
-        Xchanted
-      </div>
-      <div className='rounded-lg p-4 flex flex-col items-center justify-center gap-2 relative bg-four'>
-        <a href='https://www.xchanted.com/'>SIGN UP</a>
-        <div>
-          (use code <span className='italic'>XCHANTED_OG_MEMBER_25</span>)
+        <div className='player relative bg-four rounded-lg p-6'>
+          <label className='song-info' id='song-info-1'>
+            <div className='flex flex-col'>
+              <div className='font-semibold'>
+                DAO Chat is a decentralized messaging app build for a hackathon.
+              </div>
+              <a
+                href='https://github.com/devsalmon/dao-chat-app'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Github repo
+              </a>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://docs.google.com/presentation/d/1Z52qJKRmhDV9yoaVSwETS_aWbLrpjB8pnRet353Z3Gw/edit#slide=id.g12556e177aa_0_6'
+              >
+                Presentation
+              </a>
+              <a
+                href='https://dao-chat.vercel.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Live app
+              </a>
+            </div>
+          </label>
+          <label className='song-info' id='song-info-2'>
+            <a href='https://www.xchanted.com/'>SIGN UP</a>
+            <div>
+              (use code <span className='italic'>XCHANTED_OG_MEMBER_25</span>)
+            </div>
+          </label>
+          <label className='song-info' id='song-info-3'>
+            <a
+              href='https://github.com/BrunoCecco/Motive-Party-App'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Github repo
+            </a>
+          </label>
         </div>
-      </div>
-      <div
-        className='text-2xl font-bold  mt-10 flex gap-6 items-center'
-        id='motive'
-      >
-        {/* <img src={daochat} alt='dao chat' className='w-16' /> */}
-        Motive
-      </div>
-      <div className='rounded-lg p-4 flex flex-col items-center justify-center gap-2 relative bg-four'>
-        <a
-          href='https://github.com/BrunoCecco/Motive-Party-App'
-          target='_blank'
-          rel='noreferrer'
-        >
-          Github repo
-        </a>
       </div>
     </div>
   );
-}
+};
+
+export default Projects;

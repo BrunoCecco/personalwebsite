@@ -1,4 +1,4 @@
-function Button({ label, onClick }) {
+const Button = ({ label, onClick }) => {
   return (
     <button
       onClick={onClick}
@@ -7,6 +7,6 @@ function Button({ label, onClick }) {
       {label}
     </button>
   );
-}
+};
 
 export default Button;
