@@ -191,8 +191,8 @@ const projects = [
   },
   {
     name: 'DAO Chat',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    description: '',
+    //   'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
       {
         name: 'react',
@@ -208,8 +208,7 @@ const projects = [
   },
   {
     name: 'DAO Directory Website',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description: '',
     tags: [
       {
         name: 'reactjs',
@@ -225,8 +224,7 @@ const projects = [
   },
   {
     name: 'Motive Party App',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description: '',
     tags: [
       {
         name: 'firestore',
@@ -242,8 +240,7 @@ const projects = [
   },
   {
     name: 'Xchanted',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    description: '',
     tags: [
       {
         name: 'nextjs',
