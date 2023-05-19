@@ -84,7 +84,7 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}
-                className='w-8 h-8 border-r-2 transform -rotate-45 border-three'
+                className='w-8 h-8 border-r-2 transform -rotate-45 border-white'
               />
             </div>
             <div className='w-6 h-4'></div>
@@ -98,7 +98,7 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}
-                className='w-8 h-8 border-l-2 transform rotate-45 border-three'
+                className='w-8 h-8 border-l-2 transform rotate-45 border-white'
               />
             </div>
           </div>
