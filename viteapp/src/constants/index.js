@@ -16,7 +16,6 @@ import {
   solana,
   bcb,
   expedia,
-  carrent,
   jobit,
   tripguide,
   cpp,
@@ -186,7 +185,6 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: carrent,
     source_code_link: 'https://github.com/',
   },
   {

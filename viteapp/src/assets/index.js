@@ -1,4 +1,4 @@
-import logo from '../../public/logo.png';
+import logo from './logo.png';
 import backend from './backend.png';
 import creator from './creator.png';
 import mobile from './mobile.png';
@@ -32,7 +32,6 @@ import expedia from './company/expedia.png';
 import solana from './company/solana.png';
 import eunoia from './company/eunoia.png';
 
-import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
@@ -62,7 +61,6 @@ export {
   mactutor,
   solana,
   expedia,
-  carrent,
   jobit,
   tripguide,
   eunoia,
