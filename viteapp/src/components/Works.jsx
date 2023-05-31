@@ -86,9 +86,9 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-white text-[17px] max-w-3xl leading-[30px]'
         >
-          Here are some of the projects I have worked on. I am always looking
-          for new opportunities to learn and grow as a developer, so if you
-          would like to work with me, please feel free to reach out!
+          Here are some projects I have worked on. I am always trying to learn
+          new technologies and improve my skills, so I am keen to explore new
+          opportunities and work on different projects!
         </motion.p>
       </div>
 

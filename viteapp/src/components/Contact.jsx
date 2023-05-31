@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
+import { zoomIn } from '../utils/motion';
 import toast from 'react-hot-toast';
 
 const Contact = () => {
@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <div className={`xl:mt-12 flex flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
+        variants={zoomIn(0.2, 0.5)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -87,7 +87,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder='e.g. Elon'
               className='bg-three py-4 px-6 placeholder:text-gray-400 text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
