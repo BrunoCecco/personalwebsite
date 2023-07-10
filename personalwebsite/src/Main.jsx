@@ -101,6 +101,14 @@ const Links = () => {
       >
         <AiOutlineGithub className='text-3xl' />
       </a>
+      <a
+        href='https://drive.google.com/file/d/1TtDsm8qtf36WohNE7GzhXZqkjfwx5Bpk/view?usp=sharing'
+        target='_blank'
+        rel='noreferrer'
+        className='cursor-pointer hover:scale-110 duration-200 transition-all bg-neutral-300 rounded-md px-2 py-1'
+      >
+        CV
+      </a>
     </div>
   );
 };
