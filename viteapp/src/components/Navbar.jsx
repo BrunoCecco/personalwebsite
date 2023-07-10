@@ -59,7 +59,7 @@ const Navbar = () => {
               } hover:text-four text-[18px] font-medium cursor-pointer transition duration-200`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav?.newTab ? <a href={`${nav.id}`} rel='noreferrer' target='_blank'>{nav.title}</a> : <a href={`#${nav.id}`}>{nav.title}</a>}
             </li>
           ))}
         </ul>
