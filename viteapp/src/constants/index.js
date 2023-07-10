@@ -44,7 +44,7 @@ export const navLinks = [
   },
   {
     id: 'https://drive.google.com/file/d/1TtDsm8qtf36WohNE7GzhXZqkjfwx5Bpk/view?usp=sharing',
-    newTab: True,
+    newTab: true,
     title: 'CV'
   }
 ];
