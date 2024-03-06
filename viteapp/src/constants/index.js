@@ -43,7 +43,7 @@ export const navLinks = [
     title: 'Contact',
   },
   {
-    id: 'https://drive.google.com/file/d/1I-ePZ79czWXWo7lrJpt4-V4QAyx8OEn6/view?usp=drive_link',
+    id: 'https://drive.google.com/file/d/1Q6erQ4AWp8EKqVWRK-bedr3hU8iWWXna/view?usp=drive_link',
     newTab: true,
     title: 'CV'
   }
