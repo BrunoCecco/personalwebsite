@@ -8,6 +8,7 @@ import menu from './menu.svg';
 import close from './close.svg';
 
 import css from './tech/css.png';
+import expo from './tech/expo.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
@@ -76,5 +77,6 @@ export {
   motive,
   fpf,
   realms,
+  expo,
   // unitygame,
 };

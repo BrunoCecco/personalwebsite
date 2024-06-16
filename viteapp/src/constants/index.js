@@ -26,6 +26,7 @@ import {
   motive,
   fpf,
   realms,
+  bodymax,
   // unitygame,
 } from '../assets';
 
@@ -45,8 +46,8 @@ export const navLinks = [
   {
     id: 'https://drive.google.com/file/d/1I-ePZ79czWXWo7lrJpt4-V4QAyx8OEn6/view',
     newTab: true,
-    title: 'CV'
-  }
+    title: 'CV',
+  },
 ];
 
 const services = [
@@ -175,7 +176,12 @@ const experiences = [
     iconBg: 'blue',
     date: 'June 2023 - September 2023',
     link: 'https://www.expedia.com/',
-    points: ['To be updated.'],
+    points: [
+      'Working with the Onboarding and Rewards team to maintain, improve and test their frontend components.',
+      'Using Cypress to write end-to-end tests for the frontend components.',
+      'Collaborating with the team to implement new UI features and fix bugs.',
+      'Using GraphQL to fetch data from the backend.',
+    ],
   },
 ];
 
@@ -196,6 +202,27 @@ const projects = [
   //   image: unitygame,
   //   source_code_link: 'https://github.com/',
   // },
+  {
+    name: 'BodyMax AI',
+    description:
+      'AI-powered fitness app that provides personalized exercises for avid gym-goers.',
+    tags: [
+      {
+        name: 'expo',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react-native',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'gpt-4o',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: bodymax,
+    source_code_link: 'https://github.com/BrunoCecco/bodymax',
+  },
   {
     name: 'DAO Chat',
     description: 'Decentralized messaging platform built for a hackathon.',
