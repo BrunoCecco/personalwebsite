@@ -43,7 +43,7 @@ import fanzone from './fanzone.png';
 import cypress from './cypress.webp';
 import graphql from './graphql.png';
 import next from './next.svg';
-import abinitio from './abinitio.png';
+import abinitio from './abinitio.ico';
 import appstore from './appstore.svg';
 // import unitygame from './unitygame.png';
 
