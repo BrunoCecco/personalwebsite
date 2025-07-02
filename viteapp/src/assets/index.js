@@ -38,6 +38,7 @@ import xchanted from './xchanted.jpg';
 import daochat from './daochat.png';
 import motive from './motive.jpg';
 import fpf from './fpf.jpeg';
+import bodymax from './bodymax.jpg';
 // import unitygame from './unitygame.png';
 
 export {
@@ -78,5 +79,6 @@ export {
   fpf,
   realms,
   expo,
+  bodymax
   // unitygame,
 };
