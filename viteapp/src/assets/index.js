@@ -39,6 +39,12 @@ import daochat from './daochat.png';
 import motive from './motive.jpg';
 import fpf from './fpf.jpeg';
 import bodymax from './bodymax.jpg';
+import fanzone from './fanzone.png';
+import cypress from './cypress.webp';
+import graphql from './graphql.png';
+import next from './next.webp';
+import abinitio from './abinitio.png';
+import appstore from './appstore.svg';
 // import unitygame from './unitygame.png';
 
 export {
@@ -79,6 +85,11 @@ export {
   fpf,
   realms,
   expo,
-  bodymax
-  // unitygame,
+  bodymax,
+  abinitio,
+  next,
+  graphql,
+  cypress,
+  fanzone,
+  appstore
 };

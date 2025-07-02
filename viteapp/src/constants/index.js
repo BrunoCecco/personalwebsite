@@ -26,7 +26,13 @@ import {
   motive,
   fpf,
   realms,
+  next,
+  graphql,
+  cypress,
+  abinitio,
   bodymax,
+  fanzone,
+  appstore
   // Add new image imports here if needed
 } from '../assets';
 
@@ -76,26 +82,23 @@ const technologies = [
   { name: 'TypeScript', icon: typescript },
   { name: 'React JS', icon: reactjs },
   { name: 'React Native', icon: reactjs },
-  { name: 'Next.js', icon: reactjs },
+  { name: 'Next.js', icon: next },
   { name: 'Tailwind CSS', icon: tailwind },
   { name: 'Node JS', icon: nodejs },
-  { name: 'Flask', icon: nodejs },
   { name: 'MongoDB', icon: mongodb },
   { name: 'Firestore', icon: firestore },
   { name: 'Java', icon: java },
   { name: 'Python', icon: python },
-  { name: 'C++', icon: cpp },
-  { name: 'SQL', icon: firestore },
   { name: 'Git', icon: git },
-  { name: 'GraphQL', icon: nodejs },
-  { name: 'Cypress', icon: nodejs },
+  { name: 'GraphQL', icon: graphql },
+  { name: 'Cypress', icon: cypress },
 ];
 
 const experiences = [
   {
     title: 'Field Consultant',
     company_name: 'Ab Initio Software',
-    icon: backend,
+    icon: abinitio,
     iconBg: '#000000',
     date: 'August 2024 - Present',
     link: '',
@@ -164,7 +167,7 @@ const projects = [
       { name: 'postgresql', color: 'green-text-gradient' },
       { name: 'aws', color: 'pink-text-gradient' },
     ],
-    image: motive,
+    image: fanzone,
     links: [
       { name: 'Live Example', url: 'https://max-hart.vycto.com/' },
     ],
@@ -192,7 +195,7 @@ const projects = [
       { name: 'react-native', color: 'blue-text-gradient' },
       { name: 'firebase', color: 'green-text-gradient' },
     ],
-    image: bodymax,
+    image: appstore,
     links: [
       {
         name: 'App Store',
