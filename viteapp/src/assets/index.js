@@ -42,7 +42,7 @@ import bodymax from './bodymax.jpg';
 import fanzone from './fanzone.png';
 import cypress from './cypress.webp';
 import graphql from './graphql.png';
-import next from './next.webp';
+import next from './next.svg';
 import abinitio from './abinitio.png';
 import appstore from './appstore.svg';
 // import unitygame from './unitygame.png';
