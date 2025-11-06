@@ -23,6 +23,7 @@ import {
   unity,
   xchanted,
   daochat,
+  fanzone,
   motive,
   fpf,
   realms,
@@ -32,7 +33,6 @@ import {
   abinitio,
   bodymax,
   appstore,
-  abinitio,
   vycto,
   // unitygame,
 } from "../assets";
