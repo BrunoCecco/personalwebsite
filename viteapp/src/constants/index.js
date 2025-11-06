@@ -230,7 +230,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: vycto,
+    image: fanzone,
   },
   {
     name: "AI Mobile Apps",
@@ -272,7 +272,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: fanzone,
+    image: daochat,
     links: [
       {
         name: "Live App",
