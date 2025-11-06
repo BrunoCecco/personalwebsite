@@ -1,14 +1,22 @@
 "use client";
 
 import { BiLinkExternal } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
+import { fadeIn } from "../utils/motion";
 
 const ExperienceCard = ({ experience, index, isLast }) => {
   return (
-    <div className="relative flex gap-8">
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.2, 0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="relative flex gap-8"
+    >
       {/* Timeline line */}
       <div className="flex flex-col items-center mt-4">
         {/* Icon circle */}
@@ -70,7 +78,7 @@ const ExperienceCard = ({ experience, index, isLast }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

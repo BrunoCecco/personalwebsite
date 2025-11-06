@@ -21,13 +21,13 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("up", "spring", index * 0.2, 0.5)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="bg-two p-5 rounded-2xl sm:w-[360px] w-full border-2">
-        <div className="relative w-full h-[230px]">
+      <div className="bg-two p-5 rounded-2xl sm:w-[360px] h-[550px] w-full border-2">
+        <div className="relative w-full h-[300px]">
           <div
             style={{
               backgroundImage: `url(${
