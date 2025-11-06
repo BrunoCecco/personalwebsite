@@ -26,6 +26,10 @@ import {
   motive,
   fpf,
   realms,
+  next,
+  graphql,
+  cypress,
+  abinitio,
   bodymax,
   appstore,
   abinitio,
@@ -128,6 +132,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Field Consultant",
+    company_name: "Ab Initio Software",
+    icon: abinitio,
+    iconBg: "#000000",
+    date: "August 2024 - Present",
+    link: "",
+    points: [
+      "Leveraged proprietary data software to help customers with governance and processing.",
+      "Led frontend development on a product used by multi-billion dollar clients.",
+      "Built a simulated retail banking system for use in the company's AI demo.",
+    ],
+  },
   {
     title: "Field Consultant (Forward Deployed Engineer)",
     company_name: "Ab Initio Software",
@@ -268,7 +285,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: daochat,
+    image: fanzone,
     links: [
       {
         name: "Live App",
@@ -291,7 +308,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: realms,
+    image: xchanted,
     links: [
       {
         name: "Live App",
