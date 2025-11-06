@@ -1,9 +1,11 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
-import { SectionWrapper } from '../hoc';
+import SectionWrapper from '../hoc/SectionWrapper';
 import { zoomIn } from '../utils/motion';
 import toast from 'react-hot-toast';
 
@@ -33,8 +35,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: 'JavaScript Mastery',
@@ -42,7 +44,7 @@ const Contact = () => {
           to_email: 'bruno.ceccolini@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -126,4 +128,10 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, 'contact');
+export default function ContactSection() {
+  return (
+    <SectionWrapper idName="contact">
+      <Contact />
+    </SectionWrapper>
+  );
+}

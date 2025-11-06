@@ -1,10 +1,12 @@
+'use client';
+
 /* eslint-disable react/prop-types */
 import { BiLinkExternal } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { github } from '../assets';
-import { SectionWrapper } from '../hoc';
+import SectionWrapper from '../hoc/SectionWrapper';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
@@ -18,11 +20,16 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div 
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <div className='bg-two p-5 rounded-2xl sm:w-[360px] w-full border-2'>
         <div className='relative w-full h-[230px]'>
           <div
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${typeof image === 'string' ? image : image.src || image})` }}
             className='w-full h-full rounded-2xl overflow-hidden bg-contain bg-center bg-no-repeat'
           />
 
@@ -32,7 +39,7 @@ const ProjectCard = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-2'
             >
               <img
-                src={github}
+                src={typeof github === 'string' ? github : github.src || github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -76,7 +83,12 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
@@ -84,6 +96,9 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
           className='mt-3 text-white text-[17px] max-w-3xl leading-[30px]'
         >
           Here are some projects I have worked on. I am always trying to learn
@@ -101,4 +116,10 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, 'projects');
+export default function WorksSection() {
+  return (
+    <SectionWrapper idName="projects">
+      <Works />
+    </SectionWrapper>
+  );
+}
